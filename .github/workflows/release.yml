@@ -12,6 +12,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16.x"
+      - name: Clean up dist
+        run: rm -rf dist
       - name: Install dependencies
         run: npm install -D
       - name: Build

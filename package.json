@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ncc build ./src/main.js -o ./dist"
+    "build": "ncc build ./src/main.js -o ./dist --license LICENSE"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/binowork/match-labels/issues"
   },

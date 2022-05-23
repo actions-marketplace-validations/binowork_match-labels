@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "src/*"
 jobs:
   relase:
     runs-on: ubuntu-latest

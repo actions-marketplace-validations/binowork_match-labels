@@ -1,5 +1,8 @@
 name: match-labels
 description: "Match labels from pull request and return matched labels"
+branding:
+  icon: filter
+  color: purple
 inputs:
   default_label:
     description: "Default label"

@@ -1,0 +1,28 @@
+{
+  "name": "match-labels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@actions/core": "^1.8.2",
+    "@actions/github": "^5.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build /app/src/main.js -o /app/dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binowork/match-labels.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binowork/match-labels/issues"
+  },
+  "homepage": "https://github.com/binowork/match-labels#readme",
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.4"
+  }
+}

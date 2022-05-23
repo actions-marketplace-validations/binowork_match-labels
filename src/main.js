@@ -28,14 +28,14 @@ if (pullRequest === undefined) {
     throw new Error('This action can only be used in a pull request context');
 }
 
-let labels = pullRequest.labels.map(label => label.name);
+let inputLabels = pullRequest.labels.map(label => label.name);
 
 if (defaultLabel !== '') {
     core.info(`Default label: ${defaultLabel}`);
-    labels.push(defaultLabel);
+    inputLabels.push(defaultLabel);
 }
 
-const output = main(labels, validLabels, defaultLabel);
+const output = main(inputLabels, validLabels);
 
 core.setOutput('matched_labels', output.matched);
 core.setOutput('matched_count', output.matched_count);
